@@ -22,15 +22,37 @@ class Page1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.teal,
+        backgroundColor: Colors.blueGrey,
         body: SafeArea(
-          child: Column(
-            children: const <Widget>[
-              CircleAvatar(
-                radius: 50.0,
-                backgroundImage: AssetImage('images/c.jpg'),
-              )
-            ],
+          child: Center(
+            child: Column(
+              children: <Widget>[
+                const CircleAvatar(
+                  radius: 50.0,
+                  backgroundImage: AssetImage('images/c.jpg'),
+                ),
+                const Text(
+                  'Jimmy Riguelle',
+                  style: TextStyle(
+                      fontFamily: 'Pacifico',
+                      fontSize: 35.0,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold),
+                ),
+                const SizedBox(
+                  height: 10.0,
+                ),
+                Text(
+                  'FLUTTER DEBUTANT',
+                  style: TextStyle(
+                    letterSpacing: 2.5,
+                    fontSize: 20.0,
+                    color: Colors.teal.shade100,
+                    fontWeight: FontWeight.bold,
+                  ),
+                )
+              ],
+            ),
           ),
         ),
       ),
