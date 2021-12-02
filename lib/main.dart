@@ -52,6 +52,13 @@ class Page1 extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
+                const SizedBox(
+                  height: 20.0,
+                  width: 150.0,
+                  child: Divider(
+                    color: Colors.yellowAccent,
+                  ),
+                ),
                 const Card(
                   margin:
                       EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
