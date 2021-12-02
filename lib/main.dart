@@ -50,6 +50,54 @@ class Page1 extends StatelessWidget {
                     color: Colors.teal.shade100,
                     fontWeight: FontWeight.bold,
                   ),
+                ),
+                Container(
+                  color: Colors.white,
+                  padding: const EdgeInsets.all(10.0),
+                  margin: const EdgeInsets.symmetric(
+                      vertical: 10.0, horizontal: 25.0),
+                  child: Row(
+                    children: const <Widget>[
+                      Icon(
+                        Icons.phone,
+                        color: Colors.black,
+                      ),
+                      SizedBox(
+                        width: 10.0,
+                      ),
+                      Text(
+                        '+32 485/53.83.83',
+                        style: TextStyle(
+                          color: Colors.blue,
+                          fontSize: 15.0,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Container(
+                  color: Colors.white,
+                  padding: const EdgeInsets.all(10.0),
+                  margin: const EdgeInsets.symmetric(
+                      vertical: 10.0, horizontal: 25.0),
+                  child: Row(
+                    children: const <Widget>[
+                      Icon(
+                        Icons.email,
+                        color: Colors.black,
+                      ),
+                      SizedBox(
+                        width: 10.0,
+                      ),
+                      Text(
+                        'jimmyriguelleXgmail.com',
+                        style: TextStyle(
+                          color: Colors.blue,
+                          fontSize: 15.0,
+                        ),
+                      ),
+                    ],
+                  ),
                 )
               ],
             ),
