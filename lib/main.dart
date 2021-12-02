@@ -26,6 +26,7 @@ class Page1 extends StatelessWidget {
         body: SafeArea(
           child: Center(
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 const CircleAvatar(
                   radius: 50.0,
@@ -51,54 +52,40 @@ class Page1 extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                Container(
-                  color: Colors.white,
-                  padding: const EdgeInsets.all(10.0),
-                  margin: const EdgeInsets.symmetric(
-                      vertical: 10.0, horizontal: 25.0),
-                  child: Row(
-                    children: const <Widget>[
-                      Icon(
-                        Icons.phone,
-                        color: Colors.black,
+                const Card(
+                  margin:
+                      EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.phone,
+                      color: Colors.black,
+                    ),
+                    title: Text(
+                      '+32 485/53.83.83',
+                      style: TextStyle(
+                        color: Colors.blue,
+                        fontSize: 15.0,
                       ),
-                      SizedBox(
-                        width: 10.0,
-                      ),
-                      Text(
-                        '+32 485/53.83.83',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontSize: 15.0,
-                        ),
-                      ),
-                    ],
+                    ),
                   ),
                 ),
-                Container(
-                  color: Colors.white,
-                  padding: const EdgeInsets.all(10.0),
-                  margin: const EdgeInsets.symmetric(
-                      vertical: 10.0, horizontal: 25.0),
-                  child: Row(
-                    children: const <Widget>[
-                      Icon(
-                        Icons.email,
-                        color: Colors.black,
+                const Card(
+                  margin:
+                      EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.email,
+                      color: Colors.black,
+                    ),
+                    title: Text(
+                      'jimmyriguelle@gmail.com',
+                      style: TextStyle(
+                        color: Colors.blue,
+                        fontSize: 15.0,
                       ),
-                      SizedBox(
-                        width: 10.0,
-                      ),
-                      Text(
-                        'jimmyriguelleXgmail.com',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontSize: 15.0,
-                        ),
-                      ),
-                    ],
+                    ),
                   ),
-                )
+                ),
               ],
             ),
           ),
